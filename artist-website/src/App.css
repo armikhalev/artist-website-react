@@ -1,4 +1,4 @@
-.App {
+/*.App {
   text-align: center;
 }
 
@@ -21,4 +21,52 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}*/
+
+html {
+  background: url('./images/background.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.zoom-area {
+    border: 1px solid red;
+    width: 33%;
+    top: 118px;
+    position: relative;
+    height: 100vh;
+    display: inline-block;
+}
+
+.enter-transition {
+  animation: Enter-transition .5s linear;
+  -webkit-animation: Enter-transition .5s linear;
+}
+
+@-webkit-keyframes Enter-transition {
+  from { 
+    -webkit-transform: scale(.3);
+        -ms-transform: scale(.3);
+        transform: scale(.3);
+  }
+  to { 
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+  }
+}
+
+@keyframes Enter-transition {
+  from { 
+    -webkit-transform: scale(.3);
+        -ms-transform: scale(.3);
+        transform: scale(.3);
+  }
+  to { 
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+  }
 }
