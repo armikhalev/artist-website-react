@@ -1,27 +1,3 @@
-/*.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}*/
 
 html {
   background: url('./images/background.jpg') no-repeat center center fixed; 
@@ -44,6 +20,43 @@ html {
   animation: Enter-transition .5s linear;
   -webkit-animation: Enter-transition .5s linear;
 }
+
+.exit-transition {
+	animation: Exit-transition .5s linear;
+	-webkit-animation: Exit-transition .5s linear;
+}
+
+@-webkit-keyframes Exit-transition {
+	from {
+		display: block;
+		-webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+	}
+	to {
+		display: none;
+		-webkit-transform: scale(.1);
+        -ms-transform: scale(.1);
+        transform: scale(.1);
+	}
+}
+
+@keyframes Exit-transition {
+	from {
+		display: block;
+		-webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+	}
+	to {
+		display: none;
+		-webkit-transform: scale(.1);
+        -ms-transform: scale(.1);
+        transform: scale(.1);
+	}
+}  
+
+/* Here we have Enter-transition */
 
 @-webkit-keyframes Enter-transition {
   from { 

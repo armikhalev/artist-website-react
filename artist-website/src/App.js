@@ -9,6 +9,7 @@ class App extends Component {
 
   render() {
     return (
+
 		<div className="App">
 			<Menu>
 				<Link to='/ipad' className="zoom-area">iPad</Link>
