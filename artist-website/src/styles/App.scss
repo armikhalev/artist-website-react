@@ -1,0 +1,95 @@
+
+body {
+  background: url('../images/background.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.zoom-area {
+    border: 1px solid red;
+    width: 30%;
+    top: 118px;
+    position: relative;
+    height: 100vh;
+    display: inline-block;
+}
+
+.enter-transition {
+  animation: Enter-transition .5s linear;
+  -webkit-animation: Enter-transition .5s linear;
+}
+
+.exit-transition {
+	animation: Exit-transition .5s linear;
+	-webkit-animation: Exit-transition .5s linear;
+}
+
+/* EXIT-transition keyframe */
+@-webkit-keyframes Exit-transition {
+	from {
+		display: block;
+		background: grey;
+		width: 100%;
+		-webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+	}
+	to {
+		display: none;
+		width: 0;
+		background: none;
+		-webkit-transform: scale(.1);
+        -ms-transform: scale(.1);
+        transform: scale(.1);
+	}
+}
+
+@keyframes Exit-transition {
+	from {
+		display: block;
+		background: grey;
+		width: 100%;
+		height: 100px;
+		-webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+	}
+	to {
+		display: none;
+		width: 0;
+		height: 0;
+		background: none;
+		-webkit-transform: scale(.1);
+        -ms-transform: scale(.1);
+        transform: scale(.1);
+	}
+}  
+
+/* ENTER-transition keyframe */
+@-webkit-keyframes Enter-transition {
+  from { 
+    -webkit-transform: scale(.3);
+        -ms-transform: scale(.3);
+        transform: scale(.3);
+  }
+  to { 
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+  }
+}
+
+@keyframes Enter-transition {
+  from { 
+    -webkit-transform: scale(.3);
+        -ms-transform: scale(.3);
+        transform: scale(.3);
+  }
+  to { 
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+  }
+}

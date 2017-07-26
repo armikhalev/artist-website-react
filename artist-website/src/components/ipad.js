@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/ipad.css';
+import '../styles/components/ipad.css';
 
 export const Ipad = (props) => {
     return (

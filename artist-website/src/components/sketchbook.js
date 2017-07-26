@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/sketchbook.css';
+import '../styles/components/sketchbook.css';
 
 export const Sketchbook = (props) => {
     return (
