@@ -1,0 +1,29 @@
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
+import './App.css';
+
+import { Router } from './Router';
+import { Menu } from './components/menu';
+// import { Zoomer } from './functionals/zoomer';
+
+class App extends Component {
+
+  render() {
+    return (
+      <div className="App">
+
+          <Menu>
+            <Link to='/ipad' className="zoom-area">iPad</Link>
+            <Link to='/sketchbook' className="zoom-area">Sketchbook</Link>
+            <Link to='/phone' className="zoom-area">Phone</Link>
+          </Menu>
+          <Router />
+	    
+      </div>
+    );
+  }
+}
+
+export default App;
+
