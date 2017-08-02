@@ -1,1 +1,18 @@
-@import 'App.scss';
+/*
+ * All the scss files should be prefixed with _ in order to create one single
+ * index.css file to minimize server calls and prevent importing issues.
+ */
+
+/* elements */
+
+@import 'partials/_partials-base',
+'transitions/_transitions-base',
+'grid/_grid-base';
+
+/* components */
+
+@import '_app',
+'components/_ipad',
+'components/_phone',
+'components/_sketchbook',
+'components/_table-home';

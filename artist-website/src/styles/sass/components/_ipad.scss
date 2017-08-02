@@ -1,0 +1,8 @@
+.ipad {
+    background: red;
+	@include enter-transition;
+}
+
+.ipad-link {
+	@include zoom-area;
+}

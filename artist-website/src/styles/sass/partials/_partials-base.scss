@@ -1,0 +1,9 @@
+@mixin zoom-area {
+    border: 1px solid red;
+    width: 30%;
+    top: 118px;
+    position: relative;
+    height: 100vh;
+    display: inline-block;
+}
+

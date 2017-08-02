@@ -1,24 +1,33 @@
 {
-  "name": "artist-website",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "node-sass-chokidar": "0.0.3",
-    "npm-run-all": "^4.0.2",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-router-dom": "^4.1.2",
-    "react-scripts": "1.0.10"
-  },
-  "scripts": {
-      "build-css": "node-sass-chokidar src/styles/sass -o src/styles/css",
-      "watch-css": "npm run build-css && node-sass-chokidar src/styles/sass -o src/styles/css --watch --recursive",
-      "start": "react-scripts start",
-      "build": "react-scripts build",
-      "start-js": "react-scripts start",
-      "start": "npm-run-all -p watch-css start-js",
-      "build": "npm run build-css && react-scripts build",
-      "test": "react-scripts test --env=jsdom",
-      "eject": "react-scripts eject"
-  }
+	"name": "artist-website",
+	"version": "0.1.0",
+	"private": true,
+	"name": "artist-website",
+	"version": "0.1.0",
+	"private": true,
+	"description": "Project for an artist static website using ReactJS for interaction with visual effects on route change",
+	"keywords": ["artist-website"],
+	"author": "Arseny Mikhalev",
+	"main": "index.js",
+
+	"dependencies": {
+		"node-sass-chokidar": "0.0.3",
+		"npm-run-all": "^4.0.2",
+		"react": "^15.6.1",
+		"react-dom": "^15.6.1",
+		"react-router-dom": "^4.1.2",
+		"react-scripts": "1.0.10"
+	},
+	"scripts": {
+		"build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/styles/sass/ -o src/styles/css/",
+		"watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/styles/sass/ -o src/styles/css/ --watch --recursive",
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"start-js": "react-scripts start",
+		"start": "npm-run-all -p watch-css start-js",
+		"build": "npm run build-css && react-scripts build",
+		"test": "react-scripts test --env=jsdom",
+		"eject": "react-scripts eject"
+
+	}
 }

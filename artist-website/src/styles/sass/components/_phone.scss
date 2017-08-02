@@ -1,0 +1,8 @@
+.phone {
+    background:green;
+	@include enter-transition;
+}
+
+.phone-link {
+	@include zoom-area;
+}
