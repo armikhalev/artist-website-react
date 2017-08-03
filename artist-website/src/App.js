@@ -14,8 +14,10 @@ class App extends Component {
 				<Link to='/ipad' className="ipad-link">iPad</Link>
 				<Link to='/sketchbook' className="sketchbook-link">Sketchbook</Link>
 				<Link to='/phone' className="phone-link">Phone</Link>
+
+				<Router />
+
 			</Menu>
-			<Router />
 		</div>
     );
   }

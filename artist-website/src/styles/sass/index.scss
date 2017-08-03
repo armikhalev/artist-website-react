@@ -1,18 +1,23 @@
 /*
  * All the scss files should be prefixed with _ in order to create one single
  * index.css file to minimize server calls and prevent importing issues.
+ * 
+ * NOTE: Only lines used in this index file are compiled into CSS, 
+ * if I have a library and use only part of it, only that part is compiled.
  */
 
 /* elements */
 
-@import 'partials/_partials-base',
+@import 'mixins/_mixins-base',
+'partials/_partials-base',
 'transitions/_transitions-base',
 'grid/_grid-base';
 
 /* components */
 
 @import '_app',
+'components/_router',
 'components/_ipad',
 'components/_phone',
 'components/_sketchbook',
-'components/_table-home';
+'components/_exit-transition';

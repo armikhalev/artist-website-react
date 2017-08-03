@@ -1,4 +1,0 @@
-.table-home {
-	background: grey;
-	@include exit-transition;
-}

@@ -4,5 +4,6 @@
 }
 
 .sketchbook-link {
+	@include background("../../images/sketchbook.jpg");
 	@include zoom-area;
 }

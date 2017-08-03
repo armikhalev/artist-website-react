@@ -1,9 +1,14 @@
 
+/* Set background on html to be cover. It would not work on any other element. */
+
+html {
+	background: grey no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 .app {
-  background: url('../../images/background.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  @include container;
+	@include container;
 }

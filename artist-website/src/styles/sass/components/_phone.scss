@@ -4,5 +4,6 @@
 }
 
 .phone-link {
+	@include background("../../images/phone.jpg");
 	@include zoom-area;
 }

@@ -1,8 +1,10 @@
 .ipad {
-    background: red;
+   	@include background("../../images/i-pad.jpg");
+	height: 100%;
 	@include enter-transition;
 }
 
 .ipad-link {
+	@include background("../../images/i-pad.jpg");
 	@include zoom-area;
 }
